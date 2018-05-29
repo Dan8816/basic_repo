@@ -1,0 +1,122 @@
+Administrator@E7440-111816 MINGW64 ~
+$ cd desktop
+
+Administrator@E7440-111816 MINGW64 ~/desktop
+$ echo "# basic_repo" >> README.md
+
+Administrator@E7440-111816 MINGW64 ~/desktop
+$ git init
+Initialized empty Git repository in C:/Users/Administrator/Desktop/.git/
+
+Administrator@E7440-111816 MINGW64 ~/desktop (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+
+Administrator@E7440-111816 MINGW64 ~/desktop (master)
+$ clear
+
+Administrator@E7440-111816 MINGW64 ~/desktop
+$ pwd
+/c/Users/Administrator/desktop
+
+Administrator@E7440-111816 MINGW64 ~/desktop
+$ mkdir basic_repo
+
+Administrator@E7440-111816 MINGW64 ~/desktop
+$ cd basic_repo
+
+Administrator@E7440-111816 MINGW64 ~/desktop/basic_repo
+$ git init
+Initialized empty Git repository in C:/Users/Administrator/Desktop/basic_repo/.git/
+
+Administrator@E7440-111816 MINGW64 ~/desktop/basic_repo (master)
+$ touch index.html
+
+Administrator@E7440-111816 MINGW64 ~/desktop/basic_repo (master)
+$ touch styl.css
+
+Administrator@E7440-111816 MINGW64 ~/desktop/basic_repo (master)
+$ touch command.txt
+
+Administrator@E7440-111816 MINGW64 ~/desktop/basic_repo (master)
+$ git add .
+
+Administrator@E7440-111816 MINGW64 ~/desktop/basic_repo (master)
+$ git commit -m "1st commit"
+[master (root-commit) 1fa7d53] 1st commit
+ 3 files changed, 16 insertions(+)
+ create mode 100644 command.txt
+ create mode 100644 index.html
+ create mode 100644 styl.css
+
+Administrator@E7440-111816 MINGW64 ~/desktop/basic_repo (master)
+$ git remote add origin https://github.com/Dan8816/basic_repo.git
+
+Administrator@E7440-111816 MINGW64 ~/desktop/basic_repo (master)
+$ git push -u origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 528 bytes | 264.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/Dan8816/basic_repo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Administrator@E7440-111816 MINGW64 ~/desktop/basic_repo (master)
+$ git commit -m "2nd commit"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   index.html
+        modified:   styl.css
+
+Untracked files:
+        roblox.jpg
+
+no changes added to commit
+
+Administrator@E7440-111816 MINGW64 ~/desktop/basic_repo (master)
+$ git add .
+
+Administrator@E7440-111816 MINGW64 ~/desktop/basic_repo (master)
+$ git committ -m "2nd commit"
+git: 'committ' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Administrator@E7440-111816 MINGW64 ~/desktop/basic_repo (master)
+$ git commit -m "2nd commit"
+[master a5cbe60] 2nd commit
+ 3 files changed, 4 insertions(+)
+ create mode 100644 roblox.jpg
+
+Administrator@E7440-111816 MINGW64 ~/desktop/basic_repo (master)
+$ git remote add origin https://github.com/Dan8816/basic_repo.git
+fatal: remote origin already exists.
+
+Administrator@E7440-111816 MINGW64 ~/desktop/basic_repo (master)
+$ git push -u origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 78.06 KiB | 15.61 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Dan8816/basic_repo.git
+   1fa7d53..a5cbe60  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Administrator@E7440-111816 MINGW64 ~/desktop/basic_repo (master)
+$
+
+
+1. created remote repos
+2. created local dir, within it created an html, css, and txt files
+3. added a local repos wihtin new dir, added new files to stage, committed files and pushed to remote repo
+4. made changes to html, css, and added a jpg
+5. added changed files to stage, then committed files to push to existing origin location in remote repos
+6. pushed changed files to remote repos
